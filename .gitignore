@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+*.log
+logs/
+*.json
+*.zip
+proxy_extension_*/
+chrome_proxy_*/
+output/
