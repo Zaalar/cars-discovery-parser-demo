@@ -1,36 +1,33 @@
-# Cars Discovery Parser Demo
+# Cars Discovery Parser
 
-Selenium/BeautifulSoup parser demo for discovering automotive makes and models.
+Парсер для сбора марок и моделей автомобилей.
 
-## What it does
+## Что делает
 
-- Reads source pages from an input file.
-- Uses Selenium to load pages.
-- Parses loaded HTML with BeautifulSoup.
-- Extracts make/model data.
-- Saves structured output as JSON.
+- читает исходные страницы из файла;
+- открывает страницы через Selenium;
+- разбирает HTML через BeautifulSoup;
+- достает марки и модели;
+- сохраняет результат в JSON.
 
-## Stack
+## Стек
 
 - Python
 - Selenium
 - webdriver-manager
 - BeautifulSoup
 
-## Security cleanup
+## Настройка
 
-The original local script used `.env` and proxy settings. Public credentials were removed from this prepared version. Use `.env.example` if proxy configuration is needed.
+Если нужны прокси или другие параметры запуска, их можно указать в `.env` по примеру `.env.example`.
 
-## Run
+## Запуск
 
 ```bash
 pip install -r requirements.txt
 python discovery_parser.py
 ```
 
-## What I would improve
+## Что показывает проект
 
-- Replace ad-hoc `.env` parsing with `python-dotenv`.
-- Add clearer CLI arguments.
-- Add logs and output validation.
-- Add a smaller deterministic demo input.
+Проект показывает работу с Selenium, HTML-разбором и сохранением результата в структурированный файл.
